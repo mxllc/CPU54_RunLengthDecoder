@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/VGA_Color.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/VGA_640x480.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/Regfiles.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/DIVU.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/DIV.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/CP0.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/CONTROL.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/CLZ.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/alu.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/ip/dist_iram_ip/sim/dist_iram_ip.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/ip/dist_dmem_ip/sim/dist_dmem_ip.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/vga.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/CPU54.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/io_sel.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sources_1/new/sscomp_dataflow.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+verilog xil_defaultlib  "../../../CPU54.srcs/sim_1/new/app_tb.v" --include "../../../CPU54.srcs/sources_1/ip/clk_wiz_0"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

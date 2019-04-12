@@ -1,0 +1,23 @@
+0.6
+2016.3
+Oct 10 2016
+19:46:48
+L:/CPU54/CPU54.sim/sim_1/behav/glbl.v,1476033524,verilog,,,,glbl,,,,,,,,
+L:/CPU54/CPU54.srcs/sim_1/new/app_tb.v,1529204802,verilog,,,,app_tb,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1529120638,verilog,,,,clk_wiz_0,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1529120637,verilog,,,,clk_wiz_0_clk_wiz,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/ip/dist_dmem_ip/sim/dist_dmem_ip.v,1529149067,verilog,,,,dist_dmem_ip,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/ip/dist_iram_ip/sim/dist_iram_ip.v,1529147435,verilog,,,,dist_iram_ip,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/CLZ.v,1527384984,verilog,,,,CLZ,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/CONTROL.v,1527816930,verilog,,,,CONTROL,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/CP0.v,1528943371,verilog,,,,CP0,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v,1528905836,verilog,,,,CPU54,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/DIV.v,1527819583,verilog,,,,DIV,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/DIVU.v,1527385099,verilog,,,,DIVU,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/Regfiles.v,1527385847,verilog,,,,Regfiles,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/VGA_640x480.v,1529204823,verilog,,,,VGA_640x480,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/VGA_Color.v,1529153881,verilog,,,,VGA_Color,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/alu.v,1527385007,verilog,,,,alu,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/io_sel.v,1528988487,verilog,,,,io_sel,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v,1528951854,verilog,,,,sccomp_dataflow,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,
+L:/CPU54/CPU54.srcs/sources_1/new/vga.v,1528972735,verilog,,,,vga,,,../../../CPU54.srcs/sources_1/ip/clk_wiz_0,,,,,

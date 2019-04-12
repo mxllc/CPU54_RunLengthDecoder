@@ -1,0 +1,764 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Jun 18 23:01:59 2018
+# Process ID: 8784
+# Current directory: L:/CPU54/CPU54.runs/synth_1
+# Command line: vivado.exe -log sccomp_dataflow.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sccomp_dataflow.tcl
+# Log file: L:/CPU54/CPU54.runs/synth_1/sccomp_dataflow.vds
+# Journal file: L:/CPU54/CPU54.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sccomp_dataflow.tcl -notrace
+Command: synth_design -top sccomp_dataflow -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12108 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 289.254 ; gain = 79.148
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sccomp_dataflow' [L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'io_sel' [L:/CPU54/CPU54.srcs/sources_1/new/io_sel.v:21]
+INFO: [Synth 8-256] done synthesizing module 'io_sel' (2#1) [L:/CPU54/CPU54.srcs/sources_1/new/io_sel.v:21]
+INFO: [Synth 8-638] synthesizing module 'CPU54' [L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v:23]
+INFO: [Synth 8-638] synthesizing module 'Regfiles' [L:/CPU54/CPU54.srcs/sources_1/new/Regfiles.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Regfiles' (3#1) [L:/CPU54/CPU54.srcs/sources_1/new/Regfiles.v:23]
+INFO: [Synth 8-638] synthesizing module 'alu' [L:/CPU54/CPU54.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-256] done synthesizing module 'alu' (4#1) [L:/CPU54/CPU54.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-226] default block is never used [L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v:319]
+INFO: [Synth 8-226] default block is never used [L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v:332]
+INFO: [Synth 8-226] default block is never used [L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v:356]
+INFO: [Synth 8-226] default block is never used [L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v:365]
+INFO: [Synth 8-638] synthesizing module 'CONTROL' [L:/CPU54/CPU54.srcs/sources_1/new/CONTROL.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CONTROL' (5#1) [L:/CPU54/CPU54.srcs/sources_1/new/CONTROL.v:23]
+INFO: [Synth 8-638] synthesizing module 'CP0' [L:/CPU54/CPU54.srcs/sources_1/new/CP0.v:1]
+WARNING: [Synth 8-5788] Register CP0_array_reg_reg[11] in module CP0 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/CP0.v:21]
+WARNING: [Synth 8-3848] Net timer_int in module/entity CP0 does not have driver. [L:/CPU54/CPU54.srcs/sources_1/new/CP0.v:15]
+INFO: [Synth 8-256] done synthesizing module 'CP0' (6#1) [L:/CPU54/CPU54.srcs/sources_1/new/CP0.v:1]
+INFO: [Synth 8-638] synthesizing module 'CLZ' [L:/CPU54/CPU54.srcs/sources_1/new/CLZ.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CLZ' (7#1) [L:/CPU54/CPU54.srcs/sources_1/new/CLZ.v:23]
+INFO: [Synth 8-638] synthesizing module 'DIV' [L:/CPU54/CPU54.srcs/sources_1/new/DIV.v:23]
+WARNING: [Synth 8-5788] Register reg_r_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIV.v:40]
+WARNING: [Synth 8-5788] Register r_sign_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIV.v:40]
+WARNING: [Synth 8-5788] Register reg_q_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIV.v:44]
+WARNING: [Synth 8-5788] Register reg_b_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIV.v:40]
+WARNING: [Synth 8-5788] Register r_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIV.v:84]
+INFO: [Synth 8-256] done synthesizing module 'DIV' (8#1) [L:/CPU54/CPU54.srcs/sources_1/new/DIV.v:23]
+INFO: [Synth 8-638] synthesizing module 'DIVU' [L:/CPU54/CPU54.srcs/sources_1/new/DIVU.v:23]
+WARNING: [Synth 8-5788] Register reg_q_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIVU.v:42]
+WARNING: [Synth 8-5788] Register reg_b_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIVU.v:40]
+WARNING: [Synth 8-5788] Register reg_r_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIVU.v:40]
+WARNING: [Synth 8-5788] Register r_sign_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [L:/CPU54/CPU54.srcs/sources_1/new/DIVU.v:40]
+INFO: [Synth 8-256] done synthesizing module 'DIVU' (9#1) [L:/CPU54/CPU54.srcs/sources_1/new/DIVU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CPU54' (10#1) [L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_iram_ip' [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/realtime/dist_iram_ip_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_iram_ip' (11#1) [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/realtime/dist_iram_ip_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'dist_dmem_ip' [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/realtime/dist_dmem_ip_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_dmem_ip' (12#1) [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/realtime/dist_dmem_ip_stub.v:6]
+WARNING: [Synth 8-689] width (15) of port connection 'a' does not match port width (14) of module 'dist_dmem_ip' [L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v:97]
+INFO: [Synth 8-638] synthesizing module 'vga' [L:/CPU54/CPU54.srcs/sources_1/new/vga.v:23]
+INFO: [Synth 8-638] synthesizing module 'VGA_640x480' [L:/CPU54/CPU54.srcs/sources_1/new/VGA_640x480.v:21]
+	Parameter vga_x bound to: 640 - type: integer 
+	Parameter vga_y bound to: 480 - type: integer 
+	Parameter pict_x bound to: 640 - type: integer 
+	Parameter pict_y bound to: 480 - type: integer 
+	Parameter pict_num bound to: 6 - type: integer 
+	Parameter play_time_num bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VGA_640x480' (13#1) [L:/CPU54/CPU54.srcs/sources_1/new/VGA_640x480.v:21]
+INFO: [Synth 8-638] synthesizing module 'VGA_Color' [L:/CPU54/CPU54.srcs/sources_1/new/VGA_Color.v:23]
+INFO: [Synth 8-256] done synthesizing module 'VGA_Color' (14#1) [L:/CPU54/CPU54.srcs/sources_1/new/VGA_Color.v:23]
+INFO: [Synth 8-256] done synthesizing module 'vga' (15#1) [L:/CPU54/CPU54.srcs/sources_1/new/vga.v:23]
+WARNING: [Synth 8-3848] Net o_seg in module/entity sccomp_dataflow does not have driver. [L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v:27]
+WARNING: [Synth 8-3848] Net o_sel in module/entity sccomp_dataflow does not have driver. [L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v:28]
+INFO: [Synth 8-256] done synthesizing module 'sccomp_dataflow' (16#1) [L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v:23]
+WARNING: [Synth 8-3331] design CP0 has unconnected port timer_int
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[20]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[19]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[18]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[17]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[16]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[11]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design io_sel has unconnected port sig_w
+WARNING: [Synth 8-3331] design io_sel has unconnected port sig_r
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[7]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[6]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[5]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[4]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[3]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[2]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[1]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[0]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[7]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[6]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[5]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[4]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[3]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[2]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[1]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[0]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[15]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[14]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[13]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[12]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[11]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[10]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[9]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[8]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[7]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[6]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[5]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[4]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[3]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[2]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[1]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 330.211 ; gain = 120.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 330.211 ; gain = 120.105
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'clk_inst' [L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v:57]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_dmem_ip' instantiated as 'DMEM' [L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v:96]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_iram_ip' instantiated as 'IMEM' [L:/CPU54/CPU54.srcs/sources_1/new/sscomp_dataflow.v:88]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/dcp/dist_dmem_ip_in_context.xdc] for cell 'DMEM'
+Finished Parsing XDC File [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/dcp/dist_dmem_ip_in_context.xdc] for cell 'DMEM'
+Parsing XDC File [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/dcp_2/dist_iram_ip_in_context.xdc] for cell 'IMEM'
+Finished Parsing XDC File [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/dcp_2/dist_iram_ip_in_context.xdc] for cell 'IMEM'
+Parsing XDC File [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/dcp_3/clk_wiz_0_in_context.xdc] for cell 'clk_inst'
+Finished Parsing XDC File [L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/dcp_3/clk_wiz_0_in_context.xdc] for cell 'clk_inst'
+Parsing XDC File [L:/CPU54/CPU54.srcs/constrs_1/new/cpu.xdc]
+Finished Parsing XDC File [L:/CPU54/CPU54.srcs/constrs_1/new/cpu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [L:/CPU54/CPU54.srcs/constrs_1/new/cpu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sccomp_dataflow_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sccomp_dataflow_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [L:/CPU54/CPU54.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [L:/CPU54/CPU54.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 654.629 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'DMEM' at clock pin 'clk' is different from the actual clock period '12.500', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 654.629 ; gain = 444.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 654.629 ; gain = 444.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in. (constraint file  L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/dcp_3/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in. (constraint file  L:/CPU54/CPU54.runs/synth_1/.Xil/Vivado-8784-Dell-PC/dcp_3/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for clk_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 654.629 ; gain = 444.523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "array_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "array_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "rf_write" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_W" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DM_R" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_extend" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_a" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_b" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cause1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RMemMode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_lblh" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CP0_array_reg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "syscall" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "break" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "teq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [L:/CPU54/CPU54.srcs/sources_1/new/DIV.v:40]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [L:/CPU54/CPU54.srcs/sources_1/new/DIVU.v:40]
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_write_zero_check0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v:153]
+INFO: [Synth 8-5546] ROM "rf_write_zero_check0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "req" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "restart" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "h_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "v_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 654.629 ; gain = 444.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 11    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 78    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 40    
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  33 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 100   
+	  14 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sccomp_dataflow 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Regfiles 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	  14 Input      1 Bit        Muxes := 4     
+Module CONTROL 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 2     
+Module CP0 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 38    
+Module CLZ 
+Detailed RTL Component Info : 
++---Muxes : 
+	  33 Input      6 Bit        Muxes := 1     
+Module DIV 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module DIVU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module CPU54 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 16    
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
+Module VGA_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 2     
+Module VGA_Color 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module vga 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [L:/CPU54/CPU54.srcs/sources_1/new/CPU54.v:149]
+DSP Report: Generating DSP mul_z, operation Mode is: A*B.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: Generating DSP mul_z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: Generating DSP mul_z, operation Mode is: A*B.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: Generating DSP mul_z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: operator mul_z is absorbed into DSP mul_z.
+DSP Report: Generating DSP multu_z, operation Mode is: A*B.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: Generating DSP multu_z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: Generating DSP multu_z, operation Mode is: A*B.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: Generating DSP multu_z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+DSP Report: operator multu_z is absorbed into DSP multu_z.
+INFO: [Synth 8-5545] ROM "vga_inst/vga_6_4_inst/h_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vga_inst/vga_6_4_inst/v_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "vga_inst/vga_6_4_inst/v_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design CP0 has unconnected port timer_int
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[20]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[19]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[18]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[17]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[16]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[11]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design CONTROL has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[7]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[6]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[5]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[4]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[3]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[2]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[1]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_seg[0]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[7]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[6]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[5]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[4]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[3]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[2]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[1]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port o_sel[0]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[15]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[14]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[13]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[12]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[11]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[10]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[9]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[8]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[7]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[6]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[5]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[4]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[3]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[2]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[1]
+WARNING: [Synth 8-3331] design sccomp_dataflow has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:18 ; elapsed = 00:02:26 . Memory (MB): peak = 654.629 ; gain = 444.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|CPU54       | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CPU54       | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CPU54       | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CPU54       | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CPU54       | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CPU54       | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CPU54       | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CPU54       | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 47     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_inst/clk_out1' to pin 'clk_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_inst/clk_out2' to pin 'clk_inst/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:35 ; elapsed = 00:02:43 . Memory (MB): peak = 690.461 ; gain = 480.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:08 ; elapsed = 00:03:16 . Memory (MB): peak = 734.680 ; gain = 524.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:19 ; elapsed = 00:03:28 . Memory (MB): peak = 797.355 ; gain = 587.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:21 ; elapsed = 00:03:29 . Memory (MB): peak = 797.355 ; gain = 587.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:21 ; elapsed = 00:03:29 . Memory (MB): peak = 797.355 ; gain = 587.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:22 ; elapsed = 00:03:30 . Memory (MB): peak = 797.355 ; gain = 587.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:22 ; elapsed = 00:03:30 . Memory (MB): peak = 797.355 ; gain = 587.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:22 ; elapsed = 00:03:31 . Memory (MB): peak = 797.355 ; gain = 587.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:22 ; elapsed = 00:03:31 . Memory (MB): peak = 797.355 ; gain = 587.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |dist_iram_ip  |         1|
+|3     |dist_dmem_ip  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |clk_wiz_0    |     1|
+|2     |dist_dmem_ip |     1|
+|3     |dist_iram_ip |     1|
+|4     |CARRY4       |   165|
+|5     |DSP48E1      |     7|
+|6     |LUT1         |   268|
+|7     |LUT2         |   336|
+|8     |LUT3         |   407|
+|9     |LUT4         |   187|
+|10    |LUT5         |   492|
+|11    |LUT6         |  1743|
+|12    |MUXF7        |   439|
+|13    |MUXF8        |   102|
+|14    |FDCE         |  2206|
+|15    |FDPE         |    70|
+|16    |FDRE         |   258|
+|17    |IBUF         |     1|
+|18    |OBUF         |    14|
+|19    |OBUFT        |    16|
++------+-------------+------+
+
+Report Instance Areas: 
++------+-----------------+------------+------+
+|      |Instance         |Module      |Cells |
++------+-----------------+------------+------+
+|1     |top              |            |  6778|
+|2     |  sccpu          |CPU54       |  6269|
+|3     |    cp0_inst     |CP0         |  1717|
+|4     |    div_inst     |DIV         |   445|
+|5     |    divu_inst    |DIVU        |   279|
+|6     |    rfl          |Regfiles    |  3616|
+|7     |  vga_inst       |vga         |   408|
+|8     |    vc_inst      |VGA_Color   |    46|
+|9     |    vga_6_4_inst |VGA_640x480 |   322|
++------+-----------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:22 ; elapsed = 00:03:31 . Memory (MB): peak = 797.355 ; gain = 587.250
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:58 ; elapsed = 00:03:10 . Memory (MB): peak = 797.355 ; gain = 256.598
+Synthesis Optimization Complete : Time (s): cpu = 00:03:22 ; elapsed = 00:03:31 . Memory (MB): peak = 797.355 ; gain = 587.250
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 173 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+171 Infos, 116 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:22 ; elapsed = 00:03:29 . Memory (MB): peak = 797.355 ; gain = 587.250
+INFO: [Common 17-1381] The checkpoint 'L:/CPU54/CPU54.runs/synth_1/sccomp_dataflow.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 797.355 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 18 23:05:38 2018...
